@@ -14,6 +14,7 @@
 		075D9DF41AD0800900723E04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075D9DF31AD0800900723E04 /* Images.xcassets */; };
 		075D9DF71AD0800900723E04 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 075D9DF51AD0800900723E04 /* LaunchScreen.xib */; };
 		075D9E031AD0800900723E04 /* TimeTravelerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075D9E021AD0800900723E04 /* TimeTravelerTests.swift */; };
+		07A9C21C1ADDB74E006F1356 /* AbstractWebServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9C21B1ADDB74E006F1356 /* AbstractWebServiceClient.swift */; };
 		3AE3E38E1A107EB64157904E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B73EA29CD9384F4962826D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		075D9DFC1AD0800900723E04 /* TimeTravelerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTravelerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		075D9E011AD0800900723E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		075D9E021AD0800900723E04 /* TimeTravelerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTravelerTests.swift; sourceTree = "<group>"; };
+		07A9C21B1ADDB74E006F1356 /* AbstractWebServiceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractWebServiceClient.swift; sourceTree = "<group>"; };
 		0B201CF09FD8816DF2D23E10 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A9F3BDEE0930521A261AB4DF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C4B73EA29CD9384F4962826D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +65,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07554FA01AD390000047D45F /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				07554FA11AD390000047D45F /* AbstractNetworkService */,
+				07554FA21AD390000047D45F /* Fixer */,
+				07554FA31AD390000047D45F /* Timezone */,
+				07554FA41AD390000047D45F /* YahooWeather */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		07554FA11AD390000047D45F /* AbstractNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				07A9C21B1ADDB74E006F1356 /* AbstractWebServiceClient.swift */,
+			);
+			path = AbstractNetworkService;
+			sourceTree = "<group>";
+		};
+		07554FA21AD390000047D45F /* Fixer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fixer;
+			sourceTree = "<group>";
+		};
+		07554FA31AD390000047D45F /* Timezone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Timezone;
+			sourceTree = "<group>";
+		};
+		07554FA41AD390000047D45F /* YahooWeather */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YahooWeather;
+			sourceTree = "<group>";
+		};
 		075D9DDB1AD0800900723E04 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +134,7 @@
 				075D9DF31AD0800900723E04 /* Images.xcassets */,
 				075D9DF51AD0800900723E04 /* LaunchScreen.xib */,
 				075D9DEB1AD0800900723E04 /* TimeTraveler.xcdatamodeld */,
+				07554FA01AD390000047D45F /* WebServices */,
 				075D9DE71AD0800900723E04 /* Supporting Files */,
 			);
 			path = TimeTraveler;
@@ -293,6 +336,7 @@
 				075D9DEF1AD0800900723E04 /* ViewController.swift in Sources */,
 				075D9DEA1AD0800900723E04 /* AppDelegate.swift in Sources */,
 				075D9DED1AD0800900723E04 /* TimeTraveler.xcdatamodeld in Sources */,
+				07A9C21C1ADDB74E006F1356 /* AbstractWebServiceClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
